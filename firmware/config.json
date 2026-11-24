@@ -1,0 +1,46 @@
+{
+  "wifi": {
+    "ssid": "YOUR_WIFI_SSID",
+    "password": "YOUR_WIFI_PASSWORD",
+    "ap_ssid": "ESP8266-PowerMonitor",
+    "ap_password": ""
+  },
+  "hardware": {
+    "i2c_scl_pin": 5,
+    "i2c_sda_pin": 4,
+    "dht_pin": 14,
+    "dht_type": "DHT22",
+    "adc1_i2c_addr": 72,
+    "adc2_i2c_addr": 73
+  },
+  "calibration": {
+    "rail_12v": {
+      "name": "12V Rail",
+      "v_scale": 5.0,
+      "v_trim": 1.0,
+      "i_zero_volts": 2.500,
+      "i_sensitivity": 0.066,
+      "max_current": 30.0
+    },
+    "rail_5v": {
+      "name": "5V Rail",
+      "v_scale": 5.0,
+      "v_trim": 1.0,
+      "i_zero_volts": 2.500,
+      "i_sensitivity": 0.100,
+      "max_current": 20.0
+    },
+    "rail_3v3": {
+      "name": "3.3V Rail",
+      "v_scale": 5.0,
+      "v_trim": 1.0,
+      "i_zero_volts": 2.500,
+      "i_sensitivity": 0.100,
+      "max_current": 10.0
+    }
+  },
+  "settings": {
+    "sample_interval_ms": 500,
+    "serial_output_json": true
+  }
+}
